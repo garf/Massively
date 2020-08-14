@@ -27,24 +27,24 @@
 
     <div id="wrapper" {{#is "home"}}class="fade-in"{{/is}}>
 
-{{!--          --}}{{!-- Intro --}}
-{{!--         {{#is "home"}} --}}
-{{!--         <div id="intro"> --}}
-{{!--             <h1>{{@site.title}}</h1> --}}
-{{!--             <p>{{@site.description}}</p> --}}
-{{!--             <ul class="actions"> --}}
-{{!--                 <li><a href="#header" class="button icon solo fa-arrow-down scrolly">Продолжить</a></li> --}}
-{{!--             </ul> --}}
-{{!--         </div> --}}
-{{!--         {{/is}} --}}
+				{{!-- Intro --}}
+        {{#is "home"}}
+        <div id="intro">
+            <h1>{{@site.title}}</h1>
+            <p>{{@site.description}}</p>
+            <ul class="actions">
+                <li><a href="#header" class="button icon solo fa-arrow-down scrolly">Продолжить</a></li>
+            </ul>
+        </div>
+        {{/is}}
 
         {{!-- Header --}}
         <header id="header">
-{{!--             {{#if @site.logo}} --}}
-{{!--                 <a href="{{@site.url}}" class="logo image"><img src="{{@site.logo}}" alt="{{@site.title}}" /></a> --}}
-{{!--             {{else}} --}}
+            {{#if @site.logo}}
+                <a href="{{@site.url}}" class="logo image"><img src="{{@site.logo}}" alt="{{@site.title}}" /></a>
+            {{else}}
                 <a href="{{@site.url}}" class="logo"><img src="{{@site.logo}}" alt="{{@site.title}}" style="height: 48px;" /> {{@site.title}}</a>
-{{!--             {{/if}} --}}
+            {{/if}}
         </header>
 
         {{!-- Nav --}}
@@ -58,8 +58,9 @@
         {{!-- The footer at the very bottom of the screen --}}
         <div id="copyright">
             <ul>
-                <li>&copy; {{@site.title}}</li>
-{{!--                 <li><a href="https://ghost.org">Поддержать</a></li> --}}
+                <li>&copy; 2020 {{@site.title}}</li>
+                <li><a href="https://atheistmind.net/donations/">Поддержать</a></li>
+                <li><a href="https://atheistmind.net/about/">О проекте</a></li>
             </ul>
         </div>
 
