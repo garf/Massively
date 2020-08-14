@@ -20,17 +20,19 @@ into the {body} of the default.hbs template --}}
             <div class="author-location icon fa-map-pin">{{location}} <span class="bull">&bull;</span></div>
             {{/if}}
             <div class="author-stats">
-                {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}} <span class="bull">&bull;</span>
+                {{plural ../pagination.total empty='Нет постов' singular='% пост' plural='% постов'}} <span class="bull">&bull;</span>
             </div>
             {{#if website}}
-            <a href="{{url}}" class="icon fa-globe" title="Website"><span class="label">Website</span></a>
+            <a href="{{url}}" class="icon fa-globe" title="На главную"><span class="label">На главную</span></a>
             {{/if}}
+            <a href="https://t.me/atheist_mind" class="icon fa-telegram" title="Telegram"><span class="label">Telegram</span></a>
             {{#if twitter}}
             <a href="{{twitter_url}}" class="icon fa-twitter" title="Twitter"><span class="label">Twitter</span></a>
             {{/if}}
             {{#if facebook}}
             <a href="{{facebook_url}}" class="icon fa-facebook" title="Facebook"><span class="label">Facebook</span></a>
             {{/if}}
+            <a href="https://www.instagram.com/atheist_mind_ig/" class="icon fa-instagram" title="Instagram"><span class="label">Instagram</span></a>
             <a href="https://feedly.com/i/subscription/feed/{{url absolute="true"}}rss/" class="icon fa-rss" target="_blank" rel="noopener"><span class="label" title="RSS">RSS</span></a>
         </div>
     </header>
@@ -50,7 +52,7 @@ into the {body} of the default.hbs template --}}
             {{/if}}
             <p>{{excerpt words="33"}}</p>
             <ul class="actions special">
-                <li><a href="{{url}}" class="button">Full Story</a></li>
+                <li><a href="{{url}}" class="button">Читать</a></li>
             </ul>
         </article>
         {{/foreach}}
